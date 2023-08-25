@@ -1,0 +1,86 @@
+.tbl{
+    background-color: white;
+}
+
+#preguntas{
+    color:rgb(82, 143, 143);
+    text-shadow: 1px 1px cornflowerblue;
+}
+
+#x{
+    background-color:  gainsboro;
+    color: rgb(146, 174, 190);
+    text-decoration:solid;
+}
+
+#botton{
+    padding: 10px 20px;
+    background-color:rgb(146, 174, 190);
+    color:white;
+    border-radius:  4px;
+    text-decoration: none;
+}
+#boton1{
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+#boton2{
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+#boton3{
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+#boton4{
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+#boton5{
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+#boton6{
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+#boton7{
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+#p, #p2, #p3, #p4, #p5, #p6, #p7{
+    color: rgba(5, 22, 78, 0.664);
+    font-size: 1.2rem;
+    background-color: white;
+    opacity: 0.85;
+    
+}
+
+
+#in{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(8, 8, 8, 0.46), rgba(47, 48, 49, 0.46)),
+    url(pregunta.jpg) ;  
+    background-size: 100%;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+button{
+    opacity: 0.85;
+    
+}
+
+
+
+
+/* este color de fondo no va
+div{
+    background-color:  gainsboro; 
+}*/
+

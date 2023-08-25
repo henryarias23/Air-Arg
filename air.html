@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>air arg</title>
+        <script src="bibliotecas/jquery-3.7.0.js"></script>
+    </head>
+    <link href="air.css" rel="stylesheet" type="text/css">
+    <body>
+        <header class="menu">
+            <table dorder="1" id="tablaPricipal">
+                <td id="aa"><a href="air.html" id="in"><h1>Air Arg</h1></a></td>
+                <td><a href="air.html"><img id="imagenLogo" src="logo air/e7e207f52179f21c6c4617e6ce152704.jpg" width="100"/></a></td>
+                <td align="rigth" width="19%">
+                   <td> <a href="air.html" id="botton">inicio</a></td>
+                   <td><a href="preguntasFrecuentes/preguntas.html" id="botton">preguntas frecuentes</a></td>
+                   <td><a href="soli repuest/airform.html" id="botton">solicite presupuesto</a></td>
+                   <td><a href="servicios/servicio.html" id="botton">servicios</a></td>
+                   <td><a href="contacto/contactoair.html" id="botton">contactenos</a></td>
+                   <td><a href="clientes felices/clientesfelices.html" id="botton">clientes felices</a></td>
+                   <td> 
+                    <P align="rigth" width="8%" id="abr">&#9679 ABIERTO</P>
+                    <P align="rigth" width="8%" id="cer">&#9679 CERRADO</P>
+                    <div class="reloj" >
+                        <span id="tiemp">00:00:00</span>
+                    </div>
+                   </td> 
+                </td>
+          </table>
+        </header>
+        <br>
+        <hr>
+        <center><table id="tabla2">
+            <td><img src="imagenes/cabecera-horario.jpg" width="50"/></td>
+            <td>lunes-sabados: 09:00 - 19:00</td>
+            <td><img src="imagenes/cabecera-matricula.jpg" width="50"/></td>
+            <td>Tecnicos Matriculados CACAAV</td>
+            <td><img src="imagenes/cabecera-telefono.jpg" width="30"/></td>
+            <td>telefono: 0719-053-0301</td>
+        </table></center>
+        
+       <center><img id="img1" src="imagenes/portada.jpg" width="1350"/></center>
+    <table id="tabla" >
+        <tr>
+            <br><br><br>
+            <td>
+                 <center><img src="imagenes/quienes somos.jpg" width="400"/></center>
+            </td>
+            <td id="td2">
+                <center>
+                <h1>¿Quienes Somos?</h1>
+                    <b>
+                    <p id="p1">
+                    Air Arg es una empresa que ofrece servicios de <br> Instalacion y mantenimiento de aire acondicionado.<br>
+                    </p>
+                    <p id="p1">Tecnicos Matriculados en la CACAAV <br> (Cámara Argentina de Calefacción, Aire Acondicionado y Ventilación )<br> le garantizan su trabajo.</p>
+                    <p id="p1">En Air Arg para realizar su instalacion y<br> mantenimiento de aire acondicionado<br></p>
+                    </b>
+                </center>
+                
+            </td>  
+        </tr>
+     </table>
+     <br> <br><br>
+    <center>
+        <table id="tabla" >
+            <tr>
+                <td id="td1">
+                    <center>
+                    <h1>¿Que Hacemos?</h1>
+                    <b><p id="p1">
+                        Instalacion y mantenimiento de aire acondicionado.
+                        <br> Montaje y servicio de aire.<br> Trabajamos todas las marcas. Presupuesto en el dia.</p>
+                    <p id="p1">
+                        Ofrecemos abonos de <br>Mantenimiento Preventivo<br> para su Comercio y/o Empresa.
+                    </p></b>
+                    </center>
+                </td>
+                <td><img src="imagenes/que hacemos.gif" width="300"/></td>
+            </tr>
+        </table>
+    </center>
+    <br>
+    <br>
+    <br>
+    <center>
+    <br>
+    <br>
+    <center><table id="tabla">
+      <tr><h2>Marcas de Aires Acondicionados con las que Trabajamos</h2></tr>
+      <tr> 
+         <td><img src="imagenes/logo-bgh.jpg" width="200"/></td>
+         <td><img src="imagenes/logo-carrier.jpg" width="200"/></td>
+         <td><img src="imagenes/logo-hitachi.jpg" width="200"/></td>
+         <td><img src="imagenes/logo-LG.jpg" width="250"/></td>
+         <td><img src="imagenes/logo-samsung.jpg" width="200"/></td>
+         <td><img src="imagenes/logo-sanyo.jpg" width="200"/></td>
+      </tr>
+    </table></center>
+        <style>
+            h1{
+                color:rgb(82, 143, 143);    
+            }
+            h2{
+                color:rgb(82, 143, 143);
+                font-family:'Gill Sans';
+            }
+        </style>
+    <center><p>© AirArg -2010-2023</p>
+    <p>INSTALACION Y MANTENIMIENTO DE AIRE ACONDICIONADO</p></center>
+
+    <script language="Javascript">
+
+        $(document).ready(function(){
+            $("#imagenLogo").hide();
+           
+            $("#imagenLogo").show(1000)
+        });
+        $(document).ready(function(){
+            $("#abr").hide()
+        });
+        $(document).ready(function(){
+            $("#cer").hide()
+        });
+
+        let html = document.getElementById("tiemp");
+        setInterval(function(){
+            var tiemp= new Date();
+            var horas= tiemp.getHours();
+            var minutos=tiemp.getMinutes();
+            var segs=tiemp.getSeconds();
+            if(horas<19 && horas>=9){
+                $(document).ready(function(){
+                    $("#cer").hide(500);
+                    $("#abr").show(500)
+                });
+            }else{
+                $(document).ready(function(){
+                    $("#abr").hide(500);
+                    $("#cer").show(500)
+                });
+                   
+            }
+            html.innerHTML=horas+" : "+minutos+" : "+segs;
+        },1000);
+
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,115 @@
+
+#c{
+    color: rgb(146, 174, 190);
+    background-color: gainsboro; 
+ }
+ #air{
+     color:rgb(82, 143, 143);
+     text-shadow: 1px 1px cornflowerblue;
+ }
+ #p2{
+    color: rgb(82, 143, 143); 
+ }
+
+ #botton{
+    padding: 10px 20px;
+    background-color:rgb(146, 174, 190);
+    color:white;
+    border-radius:  4px;
+    text-decoration: none;
+}
+
+.enlace{/*le quitamos estilo al Email*/
+    text-decoration: none;
+    color:blue;
+
+}
+
+.enlace:hover{
+    text-decoration: underline; /*le subrralla cada vez que pasamos el mouse*/
+}
+
+#izquierda{ /*div contenedor izquierda*/
+    width: 45%;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    float: left; /*flota a la izquierda*/
+    text-align: center; /*centra todo el contenido*/
+}
+
+#derecha{ /*div contenedor derecha*/
+    width: 54%;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    float: right; /*flota a la derecha*/
+}
+
+input[type="text"], input[type="email"]{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+input[type="submit"]{ /*estilo del boton*/
+    padding: 18px;
+    color: rgb(82, 143, 143);
+    border-radius: 5px;
+    border: 1px solid rgb(82, 143, 143);
+}
+
+
+textarea{ 
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    height: 260px;
+}
+
+#cuadro1{ /*cajas de informacion*/
+    width: 95%;
+}
+#cuadro2{ /*cajas de informacion*/
+    width: 95%;
+}
+#cuadro{ /*cajas de informacion*/
+    width: 95%;
+}
+
+
+
+#mapa{
+    width: 95%; /*ancho*/
+    height: auto; /*alto*/
+    overflow: hidden;
+    padding: 20px;
+    
+}
+
+#titulo{
+    font-family: 'Courier New', Courier, monospace;
+    /*color: rgb(163, 88, 212);*/
+    color: rgb(138, 138, 221);
+}
+
+.enviar:hover{
+    background-color:rgb(218, 230, 230);
+}
+#in{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 720px) {
+    #izquierda{
+        width: 100%;
+    }
+    #derecha{
+        width: 100%;
+    }
+    #mapa{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,79 @@
+#arg{
+    color:rgb(82, 143, 143);
+    text-shadow: 1px 1px cornflowerblue;
+}
+#s{
+    color: rgb(146, 174, 190);
+    background-color: gainsboro; 
+    text-decoration:solid;
+}
+#botton{
+    padding: 10px 20px;
+    background-color:rgb(146, 174, 190);
+    color:white;
+    border-radius:  4px;
+    text-decoration: none;
+
+}
+#matr{
+    color: rgb(146, 174, 190);
+    background-color:  gainsboro; 
+
+}
+#div{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px auto;
+    padding: 30px;
+    background: rgb(146, 174, 190);
+    font-size: 14px;
+    width: 100%;
+    max-width:700px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+label{
+    font-size: 20px;
+    padding: 10px 0px;
+    color: blanchedalmond;
+    text-shadow: 1px 1px 1px grey;
+}
+#sel{
+    display: block;
+    font-size: 24px;
+    padding: 13px 0px;
+    color: blanchedalmond;
+    text-shadow: 1px 1px 1px grey;
+}
+input{
+    padding: 10px 20px;
+    border-radius:  4px;
+}
+select{
+    padding: 10px 20px;
+    border-radius:  4px;
+}
+textarea{
+    padding: 10px 20px;
+    border-radius:  4px;
+}
+button{
+    padding: 10px 20px;
+    border-radius:  4px;
+    background-color: cornflowerblue;
+}
+#in{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+
+
+    #imgfinal td{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    #img{
+        width: 100%; 
+    }
+}

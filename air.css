@@ -1,0 +1,153 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 80px 0px 0;
+}
+
+#tabla{
+    width: 100%;
+}
+
+#botton{
+    padding: 10px 20px;
+    background-color:rgb(146, 174, 190);
+    color:white;
+    border-radius:  4px;
+    text-decoration: none;
+}
+
+#aa{
+    text-shadow: 1px 1px cornflowerblue;
+}
+#p1{
+    color: rgba(5, 22, 78, 0.664);
+}
+#aq{
+    background-color:rgb(82, 143, 143);
+    color: rgb(146, 174, 190);
+}
+
+.menu{
+    background-color: white;
+    position: fixed;
+    top: 0;
+
+}
+.dv{
+    background-color: rgb(146, 174, 190);
+}
+.reloj{
+    border: 2px solid #ccc;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 10px rgba(0, 0, 0, 0.1),
+                inset -8px -8px 15px rgba(255, 255, 255, 0.5),
+                inset 10px 10px 10px rgba(0, 0, 0, 0.1); 
+}
+#abr{
+    color: green;
+    text-shadow: 2px 2px 2px  rgb(68, 190, 68);
+}
+#cer{
+    color: red;
+    text-shadow:2px 2px 2px  rgb(226, 84, 84);
+    
+}
+#logo2{
+    background-color: black;
+}
+#in{
+    text-decoration: none;
+}   
+
+
+
+/************************************** pantalla de celular******************************************/
+@media screen and (max-width: 500px) { 
+
+    body{
+        padding: 0px 0px 0;
+    }
+    .menu{
+        background-color: white;
+        position: static;
+        top: 0;
+        width: 100%;
+    }
+
+    #tablaPricipal{
+        width: 100%;
+
+    }
+
+    #tablaPricipal td{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    #img1{
+        width: 100%;
+
+    }
+
+    #tabla2{
+        height: 100%;
+    }
+
+    #tabla{
+        width: 100%;
+    }
+    #tabla td{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+}
+
+/************************************** pantalla de tabler******************************************/
+@media screen and (max-width: 720px) { 
+
+    body{
+        padding: 0px 0px 0;
+    }
+    .menu{
+        background-color: white;
+        position: static;
+        top: 0;
+        width: 100%;
+    }
+
+    #tablaPricipal{
+        width: 100%;
+
+    }
+
+    #tablaPricipal td{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    #img1{
+        width: 100%;
+
+    }
+
+    #tabla2{
+        height: 100%;
+    }
+
+    #tabla{
+        width: 100%;
+    }
+    #tabla td{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+
+    
+}

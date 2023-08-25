@@ -1,0 +1,45 @@
+#servair{
+    color:rgb(82, 143, 143);
+    text-shadow: 1px 1px cornflowerblue;
+}
+
+#x{
+    color: rgb(146, 174, 190);
+    background-color:  gainsboro; 
+    text-decoration:solid;
+}
+#ps{
+    color:rgb(61, 89, 105);
+}
+#ps1{
+    color:rgb(61, 89, 105);
+}
+#ps2{
+    color:rgb(61, 89, 105);
+}
+#ps3{
+    color:rgb(61, 89, 105);
+}
+
+#botton{
+    padding: 10px 20px;
+    background-color:rgb(146, 174, 190);
+    color:white;
+    border-radius:  4px;
+    text-decoration: none;
+}
+#tbs{
+    width: 100%;
+}
+#t1{
+    background-color: lightblue;
+}
+#in{
+    text-decoration: none;
+}
+.menu{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

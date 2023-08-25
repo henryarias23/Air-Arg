@@ -1,0 +1,113 @@
+#clf{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px auto;
+    padding: 20px;
+    background: rgb(146, 174, 190);
+    font-size: 14px;
+    max-width:600px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: absolute;
+     right: 36%;
+     
+}
+
+#felices{
+    color: rgb(146, 174, 190);
+}
+#botton{
+    padding: 10px 20px;
+    background-color:rgb(146, 174, 190);
+    color:white;
+    border-radius:  4px;
+    text-decoration: none;
+}
+#in{
+    text-decoration: none;
+    text-shadow: 1px 1px cornflowerblue;
+}
+#imgc{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(cf.avif);   
+    background-size: 100%;
+    background-position: center;
+    font-family: sans-serif;
+}
+p{
+    background-color: white;
+    color: rgba(60, 103, 122, 0.993);
+}
+.tbl{
+    background-color: white;
+}
+.cf{
+    background-color: white;
+}
+#env{
+    padding: 10px 20px;
+    border-radius:  4px;
+    background-color:rgb(218, 230, 230);
+
+
+}
+#env:hover{
+  background-color:aquamarine;
+}
+.content {
+    position: absolute;
+    left: 48%;
+    top: 70%;
+      transform: translate(-50%, -50%);
+    
+  }
+  
+  /* Arrow & Hover Animation */
+  #more-arrows {
+      width: 75px;
+    height: 65px;
+    
+    &:hover {
+      
+      polygon {
+        fill:cadetblue;
+        transition: all .2s ease-out;
+  
+        &.arrow-bottom {
+          transform: translateY(-18px);
+        }
+  
+        &.arrow-top {
+          transform: translateY(18px);
+        }
+        
+      }
+    
+    }
+    
+  }
+  
+  polygon {
+    fill:cadetblue;
+    transition: all .2s ease-out;
+      
+    &.arrow-middle {
+        opacity: 0.75;
+      }
+  
+      &.arrow-top {
+        opacity: 0.5
+      }
+       
+  }
+  .pl{
+    background-color: cadetblue;
+    color:black;
+  }
+  

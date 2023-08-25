@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>repuestoairarg</title>
+      <script src="../bibliotecas/jquery-3.7.0.js"></script>
+    </head>
+    <link href="airform.css" rel="stylesheet" type="text/css">
+
+    <body>
+        <hr>
+        <table>
+              <td><a href="../air.html" id="in"><h1 id="arg">Air Arg</h1></a></td>
+              <td><a href="../air.html"><img id="imagenLogo" src="../logo air/e7e207f52179f21c6c4617e6ce152704.jpg" width="100"/></a></td>
+              <td align="rigth" width="75%">
+                <td ><a href="../air.html" id="botton">inicio</a></td>
+               </td>
+        </table>
+        <hr>
+         <center>
+           <h1 id="s">Solicitar Presupuesto</h1>
+         <div id="div">
+           <form id="form" action="https://formsubmit.co/annacondiatomy@gmail.com" method="post">
+            <p><label id="sel" for="nomapell">Nombre y Apellido:</label></p>
+            <p><input id="nomapell" name="nomapell" placeholder="nombre y apellido" required/></p>
+            <p><label id="sel" for="email">Email:</label></p>  
+            <p><input id="email" name="email" placeholder="Email" required/></p>
+            <p><label id="sel" for="tel">Telefono:</label></p>  
+            <p><input id="tel" name="tel" placeholder="telefono" required/></p>
+            <br>
+
+            <p id="sel">Seleccione Sector:</p>
+          <p><input type="checkbox" id="nashe" nashe="nashe"/>
+            <label for="nashe">Instalaciones</label></p>
+          <p><input type="checkbox" id="nashe" nashe="nashe" />
+             <label for="nashe">Servicio Tecnico</label></p>
+          <p><input type="checkbox" id="nashe" nashe="nashe"/>
+             <label for="nashe">Mantenimiento Preventivo</label></p>
+          <p><input type="checkbox" id="nashe" nashe="nashe" />
+             <label for="nashe">Otras Consultas</label></p>
+            <br>
+          <p><label for="zonatrab">Zona de Trabajo:</label></p>
+          <p><select>
+            <option>--Zonas/barrios--</option>
+            <option>Agronomía</option>
+            <option>Almagro</option>
+            <option>Balvanera</option>
+            <option>Barracas</option>
+            <option>Belgrano</option>
+            <option>Caballito</option>
+            <option>Constitución</option>
+            <option>Flores</option>
+            <option>La Boca</option>
+            <option>Liniers</option>
+            <option>Montserrat</option>
+            <option>Nuñez</option>
+            <option>Parque Avellaneda</option>
+            <option>Puerto Madero</option>
+            <option>Retiro</option>
+            <option>San Nicolás</option>
+            <option>Villa Urquiza</option>
+            </select></p>  
+          <br> 
+          <p><label>Comentario:</label></p>
+          <p><textarea rows="13"></textarea></p>
+          <button type="submit">Enviar</button>
+         </form>
+      </div>
+         <h1 id="matr">Tecnicos Matriculados</h1>
+         <table id="imgfinal">
+            <td align="left" width="40%"><img src="credenciales/Logo-Cacaav.jpg" width="700" id="img"/></td>
+            <td><img src="credenciales/Credencial-Frente-2021_large (3).jpg" width="300" id="img"/></td>
+            <td><img src="credenciales/cavv.jpg"  id="img" width="280"/></td>
+         </table>
+      </center>
+
+      <script language="Javascript"> //animacion del logo
+
+        $(document).ready(function(){
+            $("#imagenLogo").hide();
+
+            $("#imagenLogo").show(1000)
+        });
+        $(document).ready(function(){
+            $("#s").hide();
+           
+            $("#s").show(500)
+        });
+        const nombre_apellido=document.getElementById("nomapell");
+        const email= document.getElementById("email");
+        const telefono=document.getElementById("tel");
+        const form=document.getElementById("form");
+
+        form.addEventListener("submit", e=>{
+          e.preventDefault()
+          let regexEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+          let noletras= /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+          if(nombre_apellido.value.length <5){
+            alert("ERROR: nombre muy corto")
+          }
+          console.log(regexEmail.test(email.value))
+          if(!regexEmail.test(email.value)){
+            alert("ERROR: email invalido")
+          }
+          
+          if(telefono.value.match(noletras))
+        {
+      return true;
+        }
+      else
+        {
+        alert("ERROR: numero de telefono invalido");
+        return false;
+        }
+          
+
+        })
+        
+
+    </script>
+    </body>

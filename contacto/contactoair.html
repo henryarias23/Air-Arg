@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contacto_air_arg</title>
+        <script src="../bibliotecas/jquery-3.7.0.js"></script>
+    </head>
+    <link href="contactair.css" rel="stylesheet" type="text/css">
+    <body>
+        <hr>
+        <table>
+              <td><a href="../air.html" id="in"><h1 id="air">Air Arg</h1></a></td>
+              <td><a href="../air.html"><img id="imagenLogo" src="../logo air/e7e207f52179f21c6c4617e6ce152704.jpg" width="100"/></a></td>
+              <td align="rigth" width="75%">
+                <td ><a href="../air.html" id="botton">inicio</a></td>
+               </td>
+        </table>
+        <hr>
+    <center>
+      <table id="c">
+        <tr>
+            <h1 id="c"><p>Contacte con Air Arg</p> 
+            <p id="p2">lunes a sabados: 09:00 - 19:00</p></h1>
+        </tr>
+        
+      </table> 
+   </center>
+
+   <div id="contenedor">
+
+        <div id="izquierda"> <!-----------------------informacion contacto---------------------------------->
+            <img src="redes/user.jpg" width="28%">
+            <h1 id="titulo">Imformacion de Contacto</h1><br>
+           
+            <p><img src="redes/mail.png" width="20"/>
+                <a href="mailto:annacondiatomy@gmail.com" target="_blank" class="enlace"> info@airarg.com</a>
+            </p>
+            <P>
+                <a href="https://wa.me/541164337865" target="_blank" class="enlace"> <img src="redes/whatsapp-line.png" width="20"> wasap:1164337865 </a>  
+            </P>
+            <p>
+                <img src="redes/420369-icone-de-sinal-de-estrada-de-telefone-de-grátis-vetor.jpg" width="22 "/>
+                telefono: 35261914
+            </p>
+        </div>
+
+        <div id="derecha"> <!--- -----------------formulario-------------------------------------------------->
+
+            <form action="https://formsubmit.co/trabajosarias23@gmail.com" method="POST">
+                <input type="text" name="nombre" placeholder="ingresa tu nombre"  id="cuadro1" required></input> <br>
+                <input type="email" name="correo" placeholder="ingresa tu correo" id="cuadro2" required></input> <br>
+                <input type="text" name="asunto" placeholder="ingrese su asunto" id="cuadro" required></input> <br>
+                <textarea name="mensaje" placeholder="ingrese su mensaje" id="cuadro"></textarea> <br>
+                <center><input type="submit" value="enviar" placeholder="enviar consulta" class="enviar"></center>
+            </form>
+        </div>
+
+        <div id="mapa"> <!------------------------mapa----------------------------------------------------->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7447838482344!2d-58.44468972372521!3d-34.61061459806641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca14b54ab859%3A0x5dbd2a9c2db637d2!2sAv.%20Acoyte%20702%2C%20C1405%20CABA!5e0!3m2!1ses!2sar!4v1686660664586!5m2!1ses!2sar" 
+            width="100%" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+   </div>
+
+    
+    <script language="Javascript"> //animacion del logo
+
+        $(document).ready(function(){
+            $("#imagenLogo").hide();
+   
+            $("#imagenLogo").show(1000);
+        });
+        $(document).ready(function(){
+            $("#c").hide();
+           
+            $("#c").show(700)
+        });
+        $(document).ready(function(){
+            $("#p2").hide();
+           
+            $("#p2").show(700)
+        });
+        const nombre=document.getElementById("cuadro1");
+        const email= document.getElementById("cuadro2");
+        const form=document.getElementById("form");
+        form.addEventListener("submit", e=>{
+          e.preventDefault()
+          let regexEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+          if(nombre.value.length <6){
+            alert("ERROR: nombre muy corto")
+          }
+          console.log(regexEmail.test(email.value))
+          if(!regexEmail.test(email.value)){
+            alert("ERROR: email invalido")
+          }
+
+        });
+
+    </script>
+
+    </body>
